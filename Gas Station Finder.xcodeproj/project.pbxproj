@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		133626A320A8FD1B00BBB3F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626A220A8FD1B00BBB3F7 /* AppDelegate.swift */; };
+		133626A520A8FD1B00BBB3F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626A420A8FD1B00BBB3F7 /* ViewController.swift */; };
+		133626A820A8FD1B00BBB3F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133626A620A8FD1B00BBB3F7 /* Main.storyboard */; };
+		133626AA20A8FD1B00BBB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133626A920A8FD1B00BBB3F7 /* Assets.xcassets */; };
+		133626AD20A8FD1B00BBB3F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133626AB20A8FD1B00BBB3F7 /* LaunchScreen.storyboard */; };
+		133626B820A8FD1B00BBB3F7 /* Gas_Station_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626B720A8FD1B00BBB3F7 /* Gas_Station_FinderTests.swift */; };
+		133626C320A8FD1B00BBB3F7 /* Gas_Station_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626C220A8FD1B00BBB3F7 /* Gas_Station_FinderUITests.swift */; };
+		133626D220A9009200BBB3F7 /* GasStation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 133626D020A9009200BBB3F7 /* GasStation.xcdatamodeld */; };
+		133626D520A901D200BBB3F7 /* GasStation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626D320A901D200BBB3F7 /* GasStation+CoreDataClass.swift */; };
+		133626D620A901D200BBB3F7 /* GasStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626D420A901D200BBB3F7 /* GasStation+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		133626B420A8FD1B00BBB3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1336269720A8FD1B00BBB3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1336269E20A8FD1B00BBB3F7;
+			remoteInfo = "Gas Station Finder";
+		};
+		133626BF20A8FD1B00BBB3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1336269720A8FD1B00BBB3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1336269E20A8FD1B00BBB3F7;
+			remoteInfo = "Gas Station Finder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1336269F20A8FD1B00BBB3F7 /* Gas Station Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gas Station Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		133626A220A8FD1B00BBB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		133626A420A8FD1B00BBB3F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		133626A720A8FD1B00BBB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		133626A920A8FD1B00BBB3F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		133626AC20A8FD1B00BBB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		133626AE20A8FD1B00BBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		133626B320A8FD1B00BBB3F7 /* Gas Station FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gas Station FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		133626B720A8FD1B00BBB3F7 /* Gas_Station_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gas_Station_FinderTests.swift; sourceTree = "<group>"; };
+		133626B920A8FD1B00BBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		133626BE20A8FD1B00BBB3F7 /* Gas Station FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gas Station FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		133626C220A8FD1B00BBB3F7 /* Gas_Station_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gas_Station_FinderUITests.swift; sourceTree = "<group>"; };
+		133626C420A8FD1B00BBB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		133626D120A9009200BBB3F7 /* GasStation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GasStation.xcdatamodel; sourceTree = "<group>"; };
+		133626D320A901D200BBB3F7 /* GasStation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GasStation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		133626D420A901D200BBB3F7 /* GasStation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GasStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1336269C20A8FD1B00BBB3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133626B020A8FD1B00BBB3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133626BB20A8FD1B00BBB3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1336269620A8FD1A00BBB3F7 = {
+			isa = PBXGroup;
+			children = (
+				133626A120A8FD1B00BBB3F7 /* Gas Station Finder */,
+				133626B620A8FD1B00BBB3F7 /* Gas Station FinderTests */,
+				133626C120A8FD1B00BBB3F7 /* Gas Station FinderUITests */,
+				133626A020A8FD1B00BBB3F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		133626A020A8FD1B00BBB3F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1336269F20A8FD1B00BBB3F7 /* Gas Station Finder.app */,
+				133626B320A8FD1B00BBB3F7 /* Gas Station FinderTests.xctest */,
+				133626BE20A8FD1B00BBB3F7 /* Gas Station FinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		133626A120A8FD1B00BBB3F7 /* Gas Station Finder */ = {
+			isa = PBXGroup;
+			children = (
+				133626D320A901D200BBB3F7 /* GasStation+CoreDataClass.swift */,
+				133626D420A901D200BBB3F7 /* GasStation+CoreDataProperties.swift */,
+				133626A220A8FD1B00BBB3F7 /* AppDelegate.swift */,
+				133626A420A8FD1B00BBB3F7 /* ViewController.swift */,
+				133626A620A8FD1B00BBB3F7 /* Main.storyboard */,
+				133626A920A8FD1B00BBB3F7 /* Assets.xcassets */,
+				133626AB20A8FD1B00BBB3F7 /* LaunchScreen.storyboard */,
+				133626AE20A8FD1B00BBB3F7 /* Info.plist */,
+				133626D020A9009200BBB3F7 /* GasStation.xcdatamodeld */,
+			);
+			path = "Gas Station Finder";
+			sourceTree = "<group>";
+		};
+		133626B620A8FD1B00BBB3F7 /* Gas Station FinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				133626B720A8FD1B00BBB3F7 /* Gas_Station_FinderTests.swift */,
+				133626B920A8FD1B00BBB3F7 /* Info.plist */,
+			);
+			path = "Gas Station FinderTests";
+			sourceTree = "<group>";
+		};
+		133626C120A8FD1B00BBB3F7 /* Gas Station FinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				133626C220A8FD1B00BBB3F7 /* Gas_Station_FinderUITests.swift */,
+				133626C420A8FD1B00BBB3F7 /* Info.plist */,
+			);
+			path = "Gas Station FinderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1336269E20A8FD1B00BBB3F7 /* Gas Station Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133626C720A8FD1B00BBB3F7 /* Build configuration list for PBXNativeTarget "Gas Station Finder" */;
+			buildPhases = (
+				1336269B20A8FD1B00BBB3F7 /* Sources */,
+				1336269C20A8FD1B00BBB3F7 /* Frameworks */,
+				1336269D20A8FD1B00BBB3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gas Station Finder";
+			productName = "Gas Station Finder";
+			productReference = 1336269F20A8FD1B00BBB3F7 /* Gas Station Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		133626B220A8FD1B00BBB3F7 /* Gas Station FinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133626CA20A8FD1B00BBB3F7 /* Build configuration list for PBXNativeTarget "Gas Station FinderTests" */;
+			buildPhases = (
+				133626AF20A8FD1B00BBB3F7 /* Sources */,
+				133626B020A8FD1B00BBB3F7 /* Frameworks */,
+				133626B120A8FD1B00BBB3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				133626B520A8FD1B00BBB3F7 /* PBXTargetDependency */,
+			);
+			name = "Gas Station FinderTests";
+			productName = "Gas Station FinderTests";
+			productReference = 133626B320A8FD1B00BBB3F7 /* Gas Station FinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		133626BD20A8FD1B00BBB3F7 /* Gas Station FinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133626CD20A8FD1B00BBB3F7 /* Build configuration list for PBXNativeTarget "Gas Station FinderUITests" */;
+			buildPhases = (
+				133626BA20A8FD1B00BBB3F7 /* Sources */,
+				133626BB20A8FD1B00BBB3F7 /* Frameworks */,
+				133626BC20A8FD1B00BBB3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				133626C020A8FD1B00BBB3F7 /* PBXTargetDependency */,
+			);
+			name = "Gas Station FinderUITests";
+			productName = "Gas Station FinderUITests";
+			productReference = 133626BE20A8FD1B00BBB3F7 /* Gas Station FinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1336269720A8FD1B00BBB3F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					1336269E20A8FD1B00BBB3F7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					133626B220A8FD1B00BBB3F7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1336269E20A8FD1B00BBB3F7;
+					};
+					133626BD20A8FD1B00BBB3F7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1336269E20A8FD1B00BBB3F7;
+					};
+				};
+			};
+			buildConfigurationList = 1336269A20A8FD1B00BBB3F7 /* Build configuration list for PBXProject "Gas Station Finder" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1336269620A8FD1A00BBB3F7;
+			productRefGroup = 133626A020A8FD1B00BBB3F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1336269E20A8FD1B00BBB3F7 /* Gas Station Finder */,
+				133626B220A8FD1B00BBB3F7 /* Gas Station FinderTests */,
+				133626BD20A8FD1B00BBB3F7 /* Gas Station FinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1336269D20A8FD1B00BBB3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133626AD20A8FD1B00BBB3F7 /* LaunchScreen.storyboard in Resources */,
+				133626AA20A8FD1B00BBB3F7 /* Assets.xcassets in Resources */,
+				133626A820A8FD1B00BBB3F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133626B120A8FD1B00BBB3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133626BC20A8FD1B00BBB3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1336269B20A8FD1B00BBB3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133626A520A8FD1B00BBB3F7 /* ViewController.swift in Sources */,
+				133626D620A901D200BBB3F7 /* GasStation+CoreDataProperties.swift in Sources */,
+				133626A320A8FD1B00BBB3F7 /* AppDelegate.swift in Sources */,
+				133626D520A901D200BBB3F7 /* GasStation+CoreDataClass.swift in Sources */,
+				133626D220A9009200BBB3F7 /* GasStation.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133626AF20A8FD1B00BBB3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133626B820A8FD1B00BBB3F7 /* Gas_Station_FinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		133626BA20A8FD1B00BBB3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133626C320A8FD1B00BBB3F7 /* Gas_Station_FinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		133626B520A8FD1B00BBB3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1336269E20A8FD1B00BBB3F7 /* Gas Station Finder */;
+			targetProxy = 133626B420A8FD1B00BBB3F7 /* PBXContainerItemProxy */;
+		};
+		133626C020A8FD1B00BBB3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1336269E20A8FD1B00BBB3F7 /* Gas Station Finder */;
+			targetProxy = 133626BF20A8FD1B00BBB3F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		133626A620A8FD1B00BBB3F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				133626A720A8FD1B00BBB3F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		133626AB20A8FD1B00BBB3F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				133626AC20A8FD1B00BBB3F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		133626C520A8FD1B00BBB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		133626C620A8FD1B00BBB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		133626C820A8FD1B00BBB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gas Station Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SIT206.Gas-Station-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		133626C920A8FD1B00BBB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gas Station Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SIT206.Gas-Station-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		133626CB20A8FD1B00BBB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gas Station FinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SIT206.Gas-Station-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gas Station Finder.app/Gas Station Finder";
+			};
+			name = Debug;
+		};
+		133626CC20A8FD1B00BBB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gas Station FinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SIT206.Gas-Station-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gas Station Finder.app/Gas Station Finder";
+			};
+			name = Release;
+		};
+		133626CE20A8FD1B00BBB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gas Station FinderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SIT206.Gas-Station-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gas Station Finder";
+			};
+			name = Debug;
+		};
+		133626CF20A8FD1B00BBB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gas Station FinderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SIT206.Gas-Station-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gas Station Finder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1336269A20A8FD1B00BBB3F7 /* Build configuration list for PBXProject "Gas Station Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133626C520A8FD1B00BBB3F7 /* Debug */,
+				133626C620A8FD1B00BBB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		133626C720A8FD1B00BBB3F7 /* Build configuration list for PBXNativeTarget "Gas Station Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133626C820A8FD1B00BBB3F7 /* Debug */,
+				133626C920A8FD1B00BBB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		133626CA20A8FD1B00BBB3F7 /* Build configuration list for PBXNativeTarget "Gas Station FinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133626CB20A8FD1B00BBB3F7 /* Debug */,
+				133626CC20A8FD1B00BBB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		133626CD20A8FD1B00BBB3F7 /* Build configuration list for PBXNativeTarget "Gas Station FinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133626CE20A8FD1B00BBB3F7 /* Debug */,
+				133626CF20A8FD1B00BBB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		133626D020A9009200BBB3F7 /* GasStation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				133626D120A9009200BBB3F7 /* GasStation.xcdatamodel */,
+			);
+			currentVersion = 133626D120A9009200BBB3F7 /* GasStation.xcdatamodel */;
+			path = GasStation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1336269720A8FD1B00BBB3F7 /* Project object */;
+}
