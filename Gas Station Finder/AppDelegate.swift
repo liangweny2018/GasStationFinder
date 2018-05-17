@@ -6,15 +6,51 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let GASSTATIONARRAY = [["Name":"United Petroleum",
+                                   "Address":"259 Burwood Hwy, Burwood VIC 3125",
+                                   "Logo":"UP",
+                                   "Photo":["UP1_1","UP1_2","UP1_3"],
+                                   "Detail":"Premium 98:\n e10: 124.9\nulp: 126.9\ndist: 124.9 gas: 64.9",
+                                   "Latitude":37.8411093,
+                                   "Longitude":145.1122741]]
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UserDefaults.standard.set(false, forKey: "EverLaunched")
+        if  UserDefaults.standard.bool(forKey: "EverLaunched") == false
+        {
+            // first launch
+            UserDefaults.standard.set(true, forKey: "EverLaunched")
+            
+            // default data
+            let managedObjectContext = persistentContainer.viewContext
+            for i in 0..<1
+            {
+                let gasStationDictionary = GASSTATIONARRAY[i]
+                let g = NSEntityDescription.insertNewObject(forEntityName: "GasStation", into: managedObjectContext) as? GasStation
+                g?.name = gasStationDictionary["Name"] as? String
+                g?.logo = UIImageJPEGRepresentation(UIImage(named: "\(gasStationDictionary["Logo"]!).jpg")!, 0.8) as NSData?
+                g?.address = gasStationDictionary["Address"] as? String
+                g?.lat = gasStationDictionary["Latitude"] as! Double
+                g?.lon = gasStationDictionary["Longitude"] as! Double
+                let photos = gasStationDictionary["Photo"] as! [String]
+                var photoDatas = [NSData]()
+                for photo in photos {
+                    photoDatas.append((UIImageJPEGRepresentation(UIImage(named: "\(photo).jpg")!, 0.8) as NSData?)!)
+                }
+                g?.photos = photoDatas as NSObject
+                g?.detail = gasStationDictionary["Detail"] as? String
+            }
+            do {
+                try managedObjectContext.save()
+            } catch {
+            }
+        }
         return true
     }
 
@@ -40,6 +76,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    // MARK: - Core Data stack
+    lazy var persistentContainer: NSPersistentContainer = {
+        /*
+         The persistent container for the application. This implementation
+         creates and returns a container, having loaded the store for the
+         application to it. This property is optional since there are legitimate
+         error conditions that could cause the creation of the store to fail.
+         */
+        let container = NSPersistentContainer(name: "GasStation")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                
+                /*
+                 Typical reasons for an error here include:
+                 * The parent directory does not exist, cannot be created, or disallows writing.
+                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                 * The device is out of space.
+                 * The store could not be migrated to the current model version.
+                 Check the error message to determine what the actual problem was.
+                 */
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+    
+    // MARK: - Core Data Saving support
+    func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
 }
 
