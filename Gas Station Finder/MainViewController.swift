@@ -21,6 +21,7 @@ class MainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.tableFooterView = UIView()
         fetchData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -63,11 +64,17 @@ class MainViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        cell.imageView?.frame = CGRect(x: 0, y: 0, width: 100, height: 70)
+        cell.imageView?.contentMode = UIViewContentMode.scaleToFill
         cell.imageView?.image = UIImage(data: gasStations[indexPath.row].logo! as Data)
         cell.textLabel?.text = gasStations[indexPath.row].name
+        cell.detailTextLabel?.text = gasStations[indexPath.row].address
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -104,14 +111,15 @@ class MainViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! DetailViewController
+        vc.data = gasStations[(tableView.indexPathForSelectedRow?.row)!]
+        vc.index = (tableView.indexPathForSelectedRow?.row)!
     }
-    */
+ 
 
 }

@@ -19,6 +19,8 @@
 		133626D620A901D200BBB3F7 /* GasStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626D420A901D200BBB3F7 /* GasStation+CoreDataProperties.swift */; };
 		133626D820AD7FA200BBB3F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626D720AD7FA200BBB3F7 /* MainViewController.swift */; };
 		133626DA20AD7FD700BBB3F7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626D920AD7FD700BBB3F7 /* DetailViewController.swift */; };
+		133626DC20AE711800BBB3F7 /* COMMON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626DB20AE711800BBB3F7 /* COMMON.swift */; };
+		133626DE20AE7A9B00BBB3F7 /* SMCycleBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133626DD20AE7A9B00BBB3F7 /* SMCycleBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		133626D420A901D200BBB3F7 /* GasStation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GasStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		133626D720AD7FA200BBB3F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		133626D920AD7FD700BBB3F7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		133626DB20AE711800BBB3F7 /* COMMON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COMMON.swift; sourceTree = "<group>"; };
+		133626DD20AE7A9B00BBB3F7 /* SMCycleBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCycleBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +115,15 @@
 				133626D420A901D200BBB3F7 /* GasStation+CoreDataProperties.swift */,
 				133626A220A8FD1B00BBB3F7 /* AppDelegate.swift */,
 				133626A420A8FD1B00BBB3F7 /* ViewController.swift */,
+				133626D720AD7FA200BBB3F7 /* MainViewController.swift */,
+				133626D920AD7FD700BBB3F7 /* DetailViewController.swift */,
+				133626DB20AE711800BBB3F7 /* COMMON.swift */,
 				133626A620A8FD1B00BBB3F7 /* Main.storyboard */,
 				133626A920A8FD1B00BBB3F7 /* Assets.xcassets */,
 				133626AB20A8FD1B00BBB3F7 /* LaunchScreen.storyboard */,
 				133626AE20A8FD1B00BBB3F7 /* Info.plist */,
 				133626D020A9009200BBB3F7 /* GasStation.xcdatamodeld */,
-				133626D720AD7FA200BBB3F7 /* MainViewController.swift */,
-				133626D920AD7FD700BBB3F7 /* DetailViewController.swift */,
+				133626DD20AE7A9B00BBB3F7 /* SMCycleBannerView.swift */,
 			);
 			path = "Gas Station Finder";
 			sourceTree = "<group>";
@@ -273,12 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133626DC20AE711800BBB3F7 /* COMMON.swift in Sources */,
 				133626A520A8FD1B00BBB3F7 /* ViewController.swift in Sources */,
 				133626D620A901D200BBB3F7 /* GasStation+CoreDataProperties.swift in Sources */,
 				133626A320A8FD1B00BBB3F7 /* AppDelegate.swift in Sources */,
 				133626D820AD7FA200BBB3F7 /* MainViewController.swift in Sources */,
 				133626D520A901D200BBB3F7 /* GasStation+CoreDataClass.swift in Sources */,
 				133626D220A9009200BBB3F7 /* GasStation.xcdatamodeld in Sources */,
+				133626DE20AE7A9B00BBB3F7 /* SMCycleBannerView.swift in Sources */,
 				133626DA20AD7FD700BBB3F7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

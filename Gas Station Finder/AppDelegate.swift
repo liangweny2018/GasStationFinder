@@ -12,26 +12,17 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let GASSTATIONARRAY = [["Name":"United Petroleum",
-                                   "Address":"259 Burwood Hwy, Burwood VIC 3125",
-                                   "Logo":"UP",
-                                   "Photo":["UP1_1","UP1_2","UP1_3"],
-                                   "Detail":"Premium 98:\n e10: 124.9\nulp: 126.9\ndist: 124.9 gas: 64.9",
-                                   "Latitude":37.8411093,
-                                   "Longitude":145.1122741]]
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UserDefaults.standard.set(false, forKey: "EverLaunched")
         if  UserDefaults.standard.bool(forKey: "EverLaunched") == false
         {
-            // first launch
             UserDefaults.standard.set(true, forKey: "EverLaunched")
             
             // default data
             let managedObjectContext = persistentContainer.viewContext
-            for i in 0..<1
+            for i in 0..<5
             {
-                let gasStationDictionary = GASSTATIONARRAY[i]
+                let gasStationDictionary = COMMON.GASSTATIONARRAY[i]
                 let g = NSEntityDescription.insertNewObject(forEntityName: "GasStation", into: managedObjectContext) as? GasStation
                 g?.name = gasStationDictionary["Name"] as? String
                 g?.logo = UIImageJPEGRepresentation(UIImage(named: "\(gasStationDictionary["Logo"]!).jpg")!, 0.8) as NSData?
