@@ -2,7 +2,7 @@
 //  GasStation+CoreDataProperties.swift
 //  Gas Station Finder
 //
-//  Created by cuichen on 14/5/18.
+//  Created by crow on 19/5/18.
 //
 //
 
@@ -16,12 +16,13 @@ extension GasStation {
         return NSFetchRequest<GasStation>(entityName: "GasStation")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var logo: NSData?
-    @NSManaged public var photos: NSObject?
     @NSManaged public var address: String?
-    @NSManaged public var lat: Double
-    @NSManaged public var lon: Double
     @NSManaged public var detail: String?
+    @NSManaged public var lat: Double
+    @NSManaged public var logo: NSData?
+    @NSManaged public var lon: Double
+    @NSManaged public var name: String?
+    @NSManaged public var photos: NSObject?
+    @NSManaged public var visit: Int32
 
 }

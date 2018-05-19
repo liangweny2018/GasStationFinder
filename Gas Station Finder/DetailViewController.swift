@@ -2,13 +2,13 @@
 //  DetailViewController.swift
 //  Gas Station Finder
 //
-//  Created by crow on 17/5/18.
+//  Created by cuichen on 17/5/18.
 //
 
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var banner: SMCycleBannerView!
     @IBOutlet weak var logoIV: UIImageView!
     @IBOutlet weak var addressLbl: UILabel!
@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.banner.initCycleBanner()
         self.banner.configureTimeInterval(timeInterval: 4.0)
@@ -30,11 +30,14 @@ class DetailViewController: UIViewController {
         
         self.title = data?.name
         self.addressLbl.text = data?.address
-        self.visitLbl.text = "Visit Times:\(COMMON.visitArray[index!])"
+        self.visitLbl.text = "Visit Times: \(data?.visit ?? 0)"
         self.detailTV.text = data?.detail
         self.logoIV.image = UIImage(data: data?.logo! as! Data)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(showMap))
+        self.addressLbl.addGestureRecognizer(tap)
     }
-
+    
     // set image list to banner
     func getImageList() -> [UIImage] {
         var images = [UIImage]()
@@ -45,20 +48,25 @@ class DetailViewController: UIViewController {
         return images
     }
     
+    @objc func showMap(){
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailMapViewController") as! DetailMapViewController
+        vc.data = data
+        self.navigationController?.show(vc, sender: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

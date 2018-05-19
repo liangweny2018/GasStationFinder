@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 g?.logo = UIImageJPEGRepresentation(UIImage(named: "\(gasStationDictionary["Logo"]!).jpg")!, 0.8) as NSData?
                 g?.address = gasStationDictionary["Address"] as? String
                 g?.lat = gasStationDictionary["Latitude"] as! Double
+                g?.visit = 0
                 g?.lon = gasStationDictionary["Longitude"] as! Double
                 let photos = gasStationDictionary["Photo"] as! [String]
                 var photoDatas = [NSData]()

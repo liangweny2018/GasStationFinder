@@ -2,7 +2,7 @@
 //  GasStation+CoreDataClass.swift
 //  Gas Station Finder
 //
-//  Created by cuichen on 14/5/18.
+//  Created by crow on 19/5/18.
 //
 //
 

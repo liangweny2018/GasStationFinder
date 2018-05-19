@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  Gas Station Finder
 //
-//  Created by crow on 17/5/18.
+//  Created by cuichen on 17/5/18.
 //
 
 import UIKit
@@ -51,7 +51,6 @@ class MainViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
